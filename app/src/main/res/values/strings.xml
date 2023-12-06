@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">mobil_proje</string>
+    <string name="okulno">202013709050</string>
+    <string name="ad">Cemalettin Furgan Karaca</string>
+    <string name="converter">Converter</string>
+    <string name="sms">SMS</string>
+    <string name="random">Random</string>
+    <string name="decimal">Decimal</string>
+    <string name="celsius">Celsius</string>
+    <string name="bytee">Mega Byte</string>
+    <string name="sonuc">Sonuç</string>
+    <string name="fahrenayt">Fahrenayt</string>
+    <string name="kelvin">Kelvin</string>
+    <string name="sıfır">0</string>
+    <string name="tel">Tel</string>
+    <string name="mesaj">Mesaj</string>
+    <string name="gönder">Gönder</string>
+    <string name="adet">Adet</string>
+    <string name="max">Max</string>
+    <string name="min">Min</string>
+    <string name="scrol">scroll</string>
+    <string name="geeksforgeeks">GeeksforGeeks</string>
+    <string name="oluştur">Oluştur</string>
+    <string-array name="decimalitems">
+        <item>Binary</item>
+        <item>Octal</item>
+        <item>Hexadecimal</item>
+    </string-array>
+    <string-array name="byteitems">
+        <item>Kilo Byte</item>
+        <item>Byte</item>
+        <item>Kibi Byte</item>
+        <item>Bit</item>
+    </string-array>
+</resources>

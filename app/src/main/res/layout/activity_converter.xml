@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/converterlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConverterActivity">
+
+    <TextView
+        android:id="@+id/tv_cnvtr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/converter"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/decimalLayout"
+        android:layout_width="350dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cnvtr"
+        tools:ignore="TextSizeCheck">
+
+        <TextView
+            android:id="@+id/tv_dec"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:text="@string/decimal"
+            app:layout_constraintBottom_toTopOf="@+id/spnr_dec"
+            app:layout_constraintEnd_toStartOf="@+id/inpt_dec"
+            app:layout_constraintHorizontal_bias="0.378"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.47"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/inpt_dec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/sıfır"
+            android:inputType="number"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_dec"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_dec"
+            app:layout_constraintVertical_bias="0.586"
+            tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,LabelFor,VisualLintBounds,DuplicateClickableBoundsCheck" />
+
+        <Spinner
+            android:id="@+id/spnr_dec"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.495"
+            tools:ignore="DuplicateClickableBoundsCheck" />
+
+        <TextView
+            android:id="@+id/tv_snc_dec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sonuc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_rest_dec"
+            app:layout_constraintHorizontal_bias="0.316"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spnr_dec"
+            app:layout_constraintVertical_bias="0.485" />
+
+        <TextView
+            android:id="@+id/tv_rest_dec"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:text="@string/sıfır"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_snc_dec"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/inpt_dec"
+            app:layout_constraintTop_toTopOf="@+id/tv_snc_dec"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/byteLayout"
+        android:layout_width="350dp"
+        android:layout_height="160dp"
+        app:layout_constraintBottom_toTopOf="@+id/celciusLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/decimalLayout"
+        app:layout_constraintVertical_bias="0.429"
+        tools:ignore="TextSizeCheck">
+
+        <TextView
+            android:id="@+id/tv_byt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bytee"
+            app:layout_constraintBottom_toTopOf="@+id/spnr_mbyt"
+            app:layout_constraintEnd_toStartOf="@+id/inpt_mbyt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.41"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/inpt_mbyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/sıfır"
+            android:inputType="number"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_byt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_byt"
+            app:layout_constraintVertical_bias="0.483"
+            tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,LabelFor,VisualLintBounds" />
+
+        <Spinner
+            android:id="@+id/spnr_mbyt"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.495" />
+
+        <TextView
+            android:id="@+id/tv_snc_byt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sonuc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_rest_mbyt"
+            app:layout_constraintHorizontal_bias="0.316"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spnr_mbyt"
+            app:layout_constraintVertical_bias="0.485" />
+
+        <TextView
+            android:id="@+id/tv_rest_mbyt"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:text="@string/sıfır"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_snc_byt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/inpt_mbyt"
+            app:layout_constraintTop_toTopOf="@+id/tv_snc_byt"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/celciusLayout"
+        android:layout_width="350dp"
+        android:layout_height="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/decimalLayout"
+        app:layout_constraintVertical_bias="0.677"
+        tools:ignore="TextSizeCheck">
+
+        <TextView
+            android:id="@+id/tv_cel"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/celsius"
+            app:layout_constraintEnd_toStartOf="@+id/inpt_cel"
+            app:layout_constraintHorizontal_bias="0.352"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/inpt_cel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/sıfır"
+            android:inputType="number"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_cel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_cel"
+            app:layout_constraintVertical_bias="0.483"
+            tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,LabelFor,VisualLintBounds" />
+
+        <TextView
+            android:id="@+id/tv_snc_cel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/sonuc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_rest_cel"
+            app:layout_constraintHorizontal_bias="0.32"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_rest_cel"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:text="@string/sıfır"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_snc_cel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/inpt_cel"
+            app:layout_constraintTop_toTopOf="@+id/tv_snc_cel"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <RadioGroup
+            android:id="@+id/rdo_grp"
+            android:layout_width="302dp"
+            android:layout_height="36dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/tv_snc_cel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_cel"
+            app:layout_constraintVertical_bias="0.517">
+
+            <RadioButton
+                android:id="@+id/rdo_fahr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fahrenayt"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/rdo_klvn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kelvin"
+                tools:ignore="TouchTargetSizeCheck" />
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
